@@ -1,5 +1,17 @@
- <!--This is all about data binding -->
-<app-product></app-product>
+<!-- This is component communication (app-child)-->
+<h1>Hello {{ message }} </h1>
+<!-- <app-child [greetMsg]="childMessage"></app-child>  Data is being passed to child -->
+
+<app-child *ngFor="let n of childNameArray" [Name]="n"></app-child>
+
+
+
+
+
+
+
+<!--This is all about data binding -->
+<!--<app-product></app-product>
 
 <div style="display: flex; justify-content: space-around;">
   <div>
@@ -48,3 +60,18 @@
   </div>
   
 </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/> -->
+
