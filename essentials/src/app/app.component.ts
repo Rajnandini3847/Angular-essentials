@@ -38,4 +38,8 @@ export class AppComponent {
   message= 'I am Parent';
   childMessage= 'I am passed from parent';
   childNameArray=['foo', 'koo', ' ', 'moo', ''];
+  displayCounter(count: number){
+    alert("button is clicked");
+    console.log(count)
+  }
 }

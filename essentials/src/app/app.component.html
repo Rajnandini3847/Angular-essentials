@@ -1,8 +1,14 @@
 <!-- This is component communication (app-child)-->
 <h1>Hello {{ message }} </h1>
-<!-- <app-child [greetMsg]="childMessage"></app-child>  Data is being passed to child -->
 
-<app-child *ngFor="let n of childNameArray" [Name]="n"></app-child>
+<!--Input with setter-->
+<!-- <app-child [greetMsg]="childMessage"></app-child> -->
+
+<!--<app-child *ngFor="let n of childNameArray" [Name]="n"></app-child>--> 
+
+
+<!--Output with setter-->
+<app-child (valueChange)="displayCounter($event)"></app-child>
 
 
 
